@@ -6,7 +6,7 @@
 
 *Comprendre les systèmes. Fiabiliser les données. Construire des solutions utiles.*
 
-<img src="./assets/data-to-project.svg" alt="Explorer, structurer, construire, concrétiser : de la donnée au projet" width="850" />
+<img src="./data-to-project.svg" alt="Explorer, structurer, construire, concrétiser : de la donnée au projet" width="850" />
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Échanger-28647B?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/benoistlegal)
 [![Email](https://img.shields.io/badge/Email-Contact-17324D?style=flat-square&logo=gmail&logoColor=white)](mailto:benoistlegal@gmail.com)
