@@ -2,90 +2,78 @@
 
 # Benoist LÉGAL
 
-**Data Engineering · Architecture · IA**
+**Data Engineering · Architecture applicative · IA**
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=17&duration=2800&pause=1200&color=28647B&center=true&vCenter=true&width=520&lines=Comprendre+les+systemes.;Fiabiliser+les+donnees.;Construire+des+solutions+utiles.)](https://github.com/DenverCoder1/readme-typing-svg)
+*Comprendre l'existant. Fiabiliser les données. Construire la suite.*
 
-**3 ans d'expérience à l'INA** · **Master Ingénierie de la Donnée — Mines Paris – PSL**
+![De la compréhension à un projet concret](assets/data-to-project.svg)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Échangeons-28647B?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/benoistlegal)
-[![Email](https://img.shields.io/badge/Email-Me_contacter-17324D?style=flat-square&logo=gmail&logoColor=white)](mailto:benoistlegal@gmail.com)
-[![YUMMY](https://img.shields.io/badge/Projet-YUMMY-28647B?style=flat-square&logo=github&logoColor=white)](https://github.com/benstL/yummy-data-platform)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Échanger-28647B?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/benoistlegal)
+[![Email](https://img.shields.io/badge/Email-Me%20contacter-17324D?style=flat-square&logo=gmail&logoColor=white)](mailto:benoistlegal@gmail.com)
+[![YUMMY](https://img.shields.io/badge/Projet-YUMMY-288579?style=flat-square&logo=github&logoColor=white)](https://github.com/benstL/yummy-data-platform)
 
 </div>
 
 ## 👋 En quelques mots
 
-Je travaille à la rencontre des **besoins métiers, des systèmes existants et de l'ingénierie data** : analyser les flux, concevoir des architectures, fiabiliser les traitements et accompagner leur industrialisation.
+Diplômé d'un **Master en Ingénierie de la Donnée (Mines Paris – PSL Executive Education)**, j'ai travaillé **3 ans à l'INA** sur des projets Data & IA, à l'interface entre équipes métiers et techniques.
 
-Après **trois années à l'Institut national de l'audiovisuel (INA)**, je souhaite contribuer à de nouveaux projets **Data & IA**, tout en développant mon expertise en **Cloud et IA générative**.
+J'interviens de l'**analyse de l'existant** à l'**industrialisation** : architecture et flux applicatifs, pipelines de données, qualité, documentation d'exploitation et traitements NLP/ML. Je souhaite contribuer à des projets de transformation Data & IA, tout en développant mes compétences, notamment en **Cloud (notions en cours d'approfondissement)** et en IA générative.
 
-## 💼 Ce que j'ai réalisé à l'INA
+## 🏗️ Ce que j'ai réalisé à l'INA · 2023–2026
 
-| Architecture & industrialisation | Data, NLP & qualité |
-| :--- | :--- |
-| **4 produits Data & IA** : cartographie, flux, DAT/DDEX, préparation de l'industrialisation | Pipeline **Python / BERT** : enrichissement de données d'entraînement par *hard negatives* |
-| Migration d'infrastructure : analyse des dépendances, préparation de la bascule et runbook | Référentiels et Datamarts : qualification d'entités, cohérence et complétude |
-| Accompagnement d'un outil de qualification de personnalités, du PoC à la production | Tests de non-régression automatisés : **plus de 50 % de temps de recette économisé** |
+- **Architecture de 4 produits Data & IA** : cartographie des composants et des flux, DAT/DDEX, préparation du passage du PoC à la production.
+- **Qualité & industrialisation** : analyse des Datamarts, accompagnement d'une migration de service et automatisation de tests de non-régression — **plus de 50 % de temps de recette économisé**.
+- **NLP & référentiels** : outil de qualification de personnalités, rapprochement d'entités et pipeline Python d'enrichissement de données d'entraînement BERT (*hard negatives*).
 
 <details>
-<summary><b>En savoir plus sur mon expérience INA</b></summary>
+<summary><b>Voir les autres contributions et méthodes</b></summary>
 
-Chargé de projets Data (2023–2026), Direction de la Technologie — Ingénierie transverse. Travail avec les équipes métiers et techniques sur l'analyse de l'existant, la documentation d'architecture, les référentiels et l'industrialisation de solutions Data & IA. Les données et systèmes internes ne sont pas publiés ici.
+- Analyse des dépendances applicatives, préparation de runbooks de migration et reprise.
+- Contrôles de cohérence, complétude et anomalies des données exploitées par les métiers.
+- Collaboration avec les équipes documentaires, data, qualité et exploitation.
+- Documentation technique et accompagnement des évolutions des systèmes existants.
 
 </details>
 
-## 🍽️ YUMMY — Mon projet Data & IA
+## 🍽️ Projet phare — [YUMMY](https://github.com/benstL/yummy-data-platform)
 
-[![Projet](https://img.shields.io/badge/Projet_personnel-En_évolution-28647B?style=flat-square)](https://github.com/benstL/yummy-data-platform)
+**Une plateforme Data & IA de recommandation alimentaire durable — MVP fonctionnel, en évolution.**
 
-**[Explorer le code et l'architecture de YUMMY →](https://github.com/benstL/yummy-data-platform)**
-
-Né de mon projet de Master, **YUMMY** est une plateforme de recommandation de recettes qui rapproche **recettes, avis utilisateurs et données de saisonnalité**. Elle me permet de concevoir une chaîne data de bout en bout, jusqu'à une application de recommandations explicables.
+YUMMY transforme des données de recettes, d'avis et de saisonnalité en **recommandations explicables**. J'y explore l'ensemble de la chaîne, de l'ingestion à la restitution :
 
 ```mermaid
 flowchart LR
-    A["Food.com · EUFIC · FAOSTAT"] --> B["Bronze"]
-    B --> C["Silver"]
-    C --> D["Gold"]
-    D --> E["NLP / ML + YUMMY Score"]
-    E --> F["FastAPI + Streamlit"]
-    classDef input fill:#17324D,color:#fff,stroke:#28647B
-    classDef pipeline fill:#28647B,color:#fff,stroke:#17324D
-    classDef result fill:#dcefeb,color:#17324D,stroke:#28647B
-    class A input
-    class B,C,D pipeline
-    class E,F result
+    A[Sources] --> B[Bronze]
+    B --> C[Silver]
+    C --> D[Gold]
+    D --> E[ML / Scoring]
+    E --> F[API / Interface]
 ```
 
-**Stack :** `Python` `DuckDB` `Parquet` `Airflow` `dbt` `MinIO` `Docker` `FastAPI` `Streamlit` `scikit-learn`
+**Stack :** Python · SQL · DuckDB · Parquet · Airflow · dbt · MinIO · Docker · FastAPI · Streamlit · NLP / clustering
 
-**Aujourd'hui :** MVP avec préparation des données, scoring, API et interface. **En évolution :** observabilité, industrialisation, explicabilité et nouvelles fonctionnalités IA. Les briques expérimentales ne sont pas toutes utilisées dans le parcours applicatif courant.
+**Aujourd'hui :** pipeline de transformation, traitements ML/NLP, scoring multicritère, API et interface de consultation.  
+**Demain :** fiabilisation du pipeline, observabilité, enrichissement des recommandations et exploration de l'IA générative.
 
-<details>
-<summary><b>Voir les prochaines évolutions de YUMMY</b></summary>
+➡️ **[Explorer le code, l'architecture et la roadmap de YUMMY](https://github.com/benstL/yummy-data-platform)**
 
-- Améliorer la pertinence et l'explicabilité du YUMMY Score.
-- Renforcer les contrôles qualité et l'observabilité des pipelines.
-- Poursuivre l'industrialisation et explorer les usages de l'IA générative.
+## 🧰 Mes terrains de jeu
 
-</details>
+| Domaine | Technologies & pratiques |
+|---|---|
+| **Data & backend** | Python, SQL, Pandas, NumPy, FastAPI, APIs REST |
+| **Architecture & stockage** | ETL/ELT, Medallion, Datamarts, DuckDB, MongoDB, Parquet, MinIO/S3 |
+| **IA & NLP** | BERT, NER, TF-IDF, KMeans, VADER, clustering, scoring |
+| **Industrialisation** | Airflow, Dagster, Docker, GitHub Actions, Jenkins, tests, CI/CD, DAT/DDEX |
 
-## 🛠️ Mes outils
-
-**Data & backend :** Python · SQL · Pandas · FastAPI · DuckDB · MongoDB · dbt  
-**ML / NLP :** BERT · NER · TF-IDF · KMeans · VADER · scoring  
-**Orchestration & DevOps :** Airflow · Dagster · Docker · Jenkins · GitHub Actions · Helm  
-**Architecture & qualité :** Medallion · ETL/ELT · DAT/DDEX · TNR · CI/CD · runbooks
+<sub>Cloud : notions et apprentissage en cours — pas une expertise revendiquée.</sub>
 
 ---
 
 <div align="center">
 
-### Un projet data à construire ou un système à faire évoluer ?
-
-**Échangeons !**
-
-[LinkedIn](https://linkedin.com/in/benoistlegal) · [Email](mailto:benoistlegal@gmail.com) · [YUMMY](https://github.com/benstL/yummy-data-platform)
+**Un système à comprendre, des données à valoriser ou un projet à faire évoluer ?**  
+[Échangeons sur LinkedIn](https://linkedin.com/in/benoistlegal) · [Découvrir YUMMY](https://github.com/benstL/yummy-data-platform)
 
 </div>
