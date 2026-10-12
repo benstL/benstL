@@ -39,7 +39,7 @@ J'aime **comprendre l'existant**, relier les enjeux techniques aux usages, puis 
 
 </details>
 
-## 🍽️ YUMMY — mon projet Data & IA
+## 🍽️ YUMMY 
 
 **[Découvrir le dépôt YUMMY →](https://github.com/benstL/yummy-data-platform)** · **MVP fonctionnel, en évolution**
 
