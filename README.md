@@ -1,171 +1,111 @@
 <div align="center">
 
-# 👋 Bonjour, je suis Benoist Légal
+# Bonjour, moi c'est Benoist 👋
 
-### Data Engineering · Architecture des données · IA & Analytics
+### Comprendre l'existant. Construire la suite.
 
-*De la compréhension des besoins à l'industrialisation de solutions data.*
+**Data Engineering · Architecture technique · IA appliquée**
 
-[![GitHub](https://img.shields.io/badge/GitHub-benstL-181717?style=for-the-badge&logo=github)](https://github.com/benstL)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Me%20contacter-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/)
-![Profile views](https://komarev.com/ghpvc/?username=benstL&style=for-the-badge&color=28647B)
+*Entre besoins métiers et solutions techniques, j'aime donner du sens aux données — et construire les systèmes qui permettent de les exploiter.*
+
+[![YUMMY](https://img.shields.io/badge/Explorer-YUMMY-2E7D65?style=for-the-badge&logo=github&logoColor=white)](https://github.com/benstL/yummy-data-platform)
+[![GitHub](https://img.shields.io/badge/Mes_projets-GitHub-24292F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/benstL?tab=repositories)
 
 </div>
 
 ---
 
-## 👨‍💻 À propos
+## Ce que j'apporte
 
-🎓 Diplômé du **Master Ingénierie de la Donnée — Mines Paris – PSL Executive Education × Liora**.
+Je suis **ingénieur de la donnée**, diplômé du **Master Ingénierie de la Donnée (Mines Paris – PSL Executive Education × Liora)**.
 
-🏗️ **Trois années à l'INA**, à l'interface entre équipes métiers et techniques : architecture applicative, documentation technique, traitements de données et industrialisation de projets.
+Pendant **trois ans à l'INA**, j'ai évolué à l'interface des équipes métiers et techniques, sur des sujets mêlant **architecture applicative, traitements de données, documentation technique et industrialisation de projets data**.
 
-🔎 J'aime comprendre les systèmes dans leur ensemble : flux, données, contraintes, usages, et même faire de la rétro-ingénierie quand c'est nécessaire.
+Ce que j'aime particulièrement : **comprendre un environnement, relier ses composants, identifier les besoins et contribuer à une solution concrète**. Qu'il s'agisse d'un système existant à faire évoluer ou d'un projet à construire, la curiosité technique reste mon point de départ.
 
-🌱 Je poursuis ma montée en compétences en **Data Engineering, DataOps, Machine Learning et architectures data**.
+> **Mon fil conducteur :** faire le lien entre la donnée, les outils et les personnes qui les utilisent.
 
-> Mon fil conducteur : construire des solutions compréhensibles, maintenables et utiles.
+## 🧩 Mes terrains de jeu
+
+| Concevoir | Construire | Faire évoluer |
+| :--- | :--- | :--- |
+| Architectures data, flux, interfaces, documentation technique | Pipelines Python/SQL, traitements NLP, API et applications | Orchestration, automatisation, CI/CD, compréhension et amélioration de l'existant |
+
+**Outils rencontrés et explorés :**
+
+`Python` `SQL` `Pandas` `DuckDB` `Airflow` `Dagster` `Docker` `dbt` `MinIO` `FastAPI` `Streamlit` `MongoDB` `GitHub Actions` `Jenkins`
 
 ---
 
-## 🍽️ YUMMY — Mon projet Data & IA
+## 🍽️ YUMMY — de la donnée brute à la recommandation
 
-![Statut](https://img.shields.io/badge/Statut-En%20%C3%A9volution-2EA44F?style=flat-square)
-![Projet](https://img.shields.io/badge/Type-Projet%20personnel%20%26%20acad%C3%A9mique-28647B?style=flat-square)
-![Architecture](https://img.shields.io/badge/Architecture-Medallion-8A63D2?style=flat-square)
+**Mon projet phare · Data Engineering & IA · En évolution continue**
 
-**YUMMY** est une plateforme expérimentale de **recommandation de recettes fondée sur les données**. Elle rapproche des recettes et avis utilisateurs, des informations sur la saisonnalité et des indicateurs de disponibilité alimentaire pour proposer des recommandations contextualisées.
+[![Voir le projet](https://img.shields.io/badge/Voir_le_dépôt-YUMMY-2E7D65?style=flat-square&logo=github&logoColor=white)](https://github.com/benstL/yummy-data-platform)
+![Statut](https://img.shields.io/badge/Statut-en_évolution-DAA520?style=flat-square)
 
-L'utilisateur peut explorer des recettes selon son **pays**, le **mois** et les **ingrédients** qui l'intéressent. L'objectif n'est pas seulement de classer les recettes, mais aussi **d'expliquer les critères utilisés** et de signaler les limites des données.
+**Et si choisir une recette pouvait aussi tenir compte de la saisonnalité, des ingrédients et des données disponibles ?**
 
-### 🎯 Ce que j'explore avec YUMMY
-
-- **Data Engineering** : ingestion, nettoyage, standardisation et enrichissement des données.
-- **Architecture** : séparation Bronze / Silver / Gold et stockage analytique.
-- **Data Science** : analyse de sentiment, regroupement de recettes et scoring multicritère.
-- **API & produit** : exposition des recommandations et interface de consultation.
-- **Qualité & transparence** : distinction entre saisonnalité documentée et disponibilité estimée.
-
-### 🏗️ Architecture conceptuelle
+YUMMY explore cette idée à travers une plateforme de recommandation de recettes. C'est aussi mon laboratoire pour travailler **l'ensemble d'une chaîne data** : ingestion, préparation, modélisation, scoring et restitution dans une application.
 
 ```mermaid
-flowchart TD
-    A[Food.com<br/>Recettes et avis] --> B[Bronze<br/>Données brutes]
-    E[EUFIC<br/>Saisonnalité européenne] --> B
-    F[FAOSTAT<br/>Production annuelle] --> B
-    B --> C[Silver<br/>Nettoyage et standardisation]
-    C --> D[Gold<br/>Enrichissement et scores]
-    D --> G[Recommandations<br/>YUMMY Score]
-    G --> H[FastAPI<br/>Services de recommandation]
-    G --> I[Streamlit<br/>Interface MVP]
-    D -. Stockage / synchronisation .-> J[(MinIO / Parquet)]
-    K[Airflow<br/>Orchestration des traitements] -.-> C
-    K -.-> D
+flowchart LR
+    A["📦 Sources de données"] --> B["🥉 Bronze"]
+    B --> C["🥈 Silver"]
+    C --> D["🥇 Gold"]
+    D --> E["🧠 Scoring & recommandations"]
+    E --> F["🍽️ API & interface"]
 ```
 
-> **Note d'architecture :** le MVP Streamlit peut lire les données Gold locales ; MinIO n'est pas nécessairement interrogé à chaque consultation. Ce schéma présente les principaux composants du projet, pas une infrastructure cloud déjà déployée.
+**Les données :** Food.com (recettes et avis), EUFIC (saisonnalité européenne) et FAOSTAT (production agricole annuelle, utilisée avec prudence comme indicateur complémentaire de disponibilité).
 
-### 🧪 Sources de données
+**La démarche :** architecture Medallion, traitements Python et SQL, analyse de sentiment, clustering, score multicritère, API FastAPI et interface Streamlit.
 
-| Source | Rôle dans le projet | Limite à connaître |
-|---|---|---|
-| **Food.com** | Recettes, ingrédients et avis | Données historiques et qualité variable |
-| **EUFIC** | Références de saisonnalité en Europe | Couverture principalement européenne |
-| **FAOSTAT** | Indicateurs de production par pays | La production annuelle **ne mesure pas** directement la saisonnalité mensuelle |
-
-### 🧰 Stack du projet
-
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white)
-![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?logo=duckdb&logoColor=black)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
-![Apache Airflow](https://img.shields.io/badge/Airflow-017CEE?logo=apacheairflow&logoColor=white)
-![dbt](https://img.shields.io/badge/dbt-FF694B?logo=dbt&logoColor=white)
-![MinIO](https://img.shields.io/badge/MinIO-C72E49?logo=minio&logoColor=white)
-
-### 🚧 Un projet en évolution continue
-
-**MVP et travaux déjà engagés**
-
-- [x] Collecte et préparation des données de recettes
-- [x] Structuration Bronze / Silver / Gold
-- [x] Premiers traitements NLP, clustering et scoring
-- [x] Première API FastAPI et interface Streamlit
-- [x] Expérimentation d'une orchestration Airflow et du stockage MinIO
-
-**Prochaines améliorations**
-
-- [ ] Renforcer les tests automatiques et les contrôles qualité
-- [ ] Consolider les modèles dbt et les contrats de données
-- [ ] Uniformiser l'exécution avec Docker Compose
-- [ ] Ajouter une observabilité plus complète (Prometheus / Grafana)
-- [ ] Améliorer l'explicabilité et le niveau de confiance des recommandations
-- [ ] Étudier la traduction FR / EN et un déploiement cloud
+**L'ambition :** améliorer progressivement la qualité des recommandations, la fiabilité des données et l'industrialisation de la plateforme.
 
 <details>
-<summary><strong>🔍 Comment fonctionne le YUMMY Score ?</strong></summary>
+<summary><b>🔍 Voir les chantiers d'évolution de YUMMY</b></summary>
 
-Le score expérimental combine plusieurs dimensions : appréciation des recettes, cohérence des ingrédients, temps de préparation et indicateurs de saisonnalité ou de disponibilité. Les pondérations et leur validation restent des axes d'amélioration.
+<br>
 
-La disponibilité estimée à partir de FAOSTAT ne doit pas être présentée comme une preuve de saisonnalité locale.
+- Renforcer la qualité, la traçabilité et les indicateurs de confiance des données.
+- Faire évoluer les traitements et l'orchestration (Airflow, dbt, MinIO).
+- Approfondir l'explicabilité et la pertinence du YUMMY Score.
+- Développer les tests, la CI/CD et l'observabilité.
+- Améliorer l'expérience utilisateur et explorer de nouveaux usages de l'IA.
+
+*Cette liste présente des axes de travail, pas des fonctionnalités toutes déjà livrées. L'état précis des composants est documenté dans le dépôt.*
 
 </details>
 
-<details>
-<summary><strong>🧭 Pourquoi ce projet ?</strong></summary>
-
-YUMMY est mon terrain d'expérimentation de bout en bout : partir de données hétérogènes, concevoir des transformations reproductibles, construire un produit consultable et documenter honnêtement les limites des indicateurs.
-
-</details>
-
-➡️ **Retrouver le projet :** [mes dépôts GitHub](https://github.com/benstL?tab=repositories) — rechercher **YUMMY**.
+**→ [Explorer le code, l'architecture et les prochaines étapes de YUMMY](https://github.com/benstL/yummy-data-platform)**
 
 ---
 
-## 🛠️ Technologies & pratiques
+## 🏛️ Une expérience de terrain : l'INA
 
-| Domaine | Technologies / sujets |
-|---|---|
-| **Traitement & analyse** | Python, SQL, Pandas, DuckDB, Parquet |
-| **Orchestration & DataOps** | Airflow, Dagster, Docker, Jenkins, GitHub Actions |
-| **Stockage & modélisation** | MongoDB, MinIO, dbt, architectures Medallion |
-| **Applications** | FastAPI, Streamlit, APIs REST |
-| **IA & NLP** | Classification, analyse de sentiment, clustering, BERT |
-| **Architecture & collaboration** | DAT, schémas de flux, documentation, interfaces métier/technique |
+À l'**Institut national de l'audiovisuel**, j'ai contribué à des projets de valorisation des données audiovisuelles, au croisement des enjeux documentaires, métiers et techniques.
 
-<details>
-<summary><strong>⚙️ Ce que j'aime approfondir</strong></summary>
+- **Architecture & analyse :** compréhension des systèmes, cartographie des applications et des flux, dossiers d'architecture technique.
+- **Data & traitements :** contribution à des environnements de traitement de transcriptions, d'entités nommées et de données de référence.
+- **Industrialisation & collaboration :** échanges entre métiers et équipes techniques, formalisation des interfaces et accompagnement de l'évolution des solutions.
 
-- La fiabilité des pipelines : reprise sur erreur, idempotence, qualité et traçabilité.
-- Le passage du prototype à un système industrialisable.
-- L'observabilité, les tests et les pratiques CI/CD.
-- La compréhension des systèmes existants et leur évolution progressive.
-
-</details>
+*Les réalisations professionnelles sont présentées ici à un niveau général, dans le respect de la confidentialité des projets.*
 
 ---
 
-## 📈 GitHub en un coup d'œil
+## 🚀 Et maintenant ?
+
+Je souhaite rejoindre une équipe où je pourrai **contribuer à des projets data concrets**, approfondir mes compétences et continuer à naviguer entre **ingénierie, architecture et compréhension métier**.
+
+Je m'intéresse notamment aux opportunités en **Data Engineering, ingénierie d'études et ingénierie transverse**, avec une ouverture aux projets d'IA appliquée.
 
 <div align="center">
 
-![Statistiques GitHub](https://github-readme-stats.vercel.app/api?username=benstL&show_icons=true&hide_border=true&theme=github_dark)
+### Un projet, une idée, une opportunité ?
 
-![Langages](https://github-readme-stats.vercel.app/api/top-langs/?username=benstL&layout=compact&hide_border=true&theme=github_dark)
+**Échangeons.**
 
-</div>
-
-> Ces cartes proviennent d'un service externe et peuvent être momentanément indisponibles. Elles reflètent l'activité GitHub publique, pas l'ensemble de mon expérience professionnelle.
-
----
-
-<div align="center">
-
-### 🤝 Échangeons
-
-Je suis ouvert aux échanges techniques, aux collaborations et aux opportunités autour de la data et de l'IA.
-
-**Merci de votre visite !**
+[![Me contacter sur GitHub](https://img.shields.io/badge/Me_contacter-GitHub-24292F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/benstL)
 
 </div>
