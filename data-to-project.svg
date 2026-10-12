@@ -1,17 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="920" height="220" viewBox="0 0 920 220" role="img" aria-labelledby="title desc">
-<title id="title">De la compréhension à un projet concret</title><desc id="desc">Quatre formes géométriques s'activent successivement : explorer, structurer, construire et concrétiser. Une application apparaît à la fin du cycle.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 190" role="img" aria-labelledby="title desc">
+<title id="title">De la compréhension à un projet concret</title>
+<desc id="desc">Trois formes abstraites apparaissent successivement puis convergent vers une application finalisée.</desc>
 <style>
-.bg{fill:#10273b}.frame{fill:#17324d;stroke:#456e84;stroke-width:1.4}.line{fill:none;stroke:#477d95;stroke-width:2;stroke-dasharray:5 8}.shape{fill:none;stroke:#8dc7d0;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.caption{font:500 15px system-ui,-apple-system,Segoe UI,sans-serif;fill:#d1e5e9;text-anchor:middle}.heading{font:600 15px system-ui,-apple-system,Segoe UI,sans-serif;fill:#87c4c8;letter-spacing:2px}.stage{animation:glow 8s ease-in-out infinite}.s1{animation-delay:0s}.s2{animation-delay:2s}.s3{animation-delay:4s}.s4{animation-delay:6s}.pulse{fill:#57e0cc;filter:url(#halo);animation:travel 8s ease-in-out infinite}.project{opacity:0;animation:reveal 8s ease-in-out infinite}.spark{animation:spark 8s ease-in-out infinite;transform-origin:740px 95px}
-@keyframes glow{0%,20%,100%{opacity:.55}5%,17%{opacity:1}}@keyframes travel{0%{transform:translateX(0);opacity:0}5%{opacity:1}80%{transform:translateX(585px);opacity:1}92%,100%{transform:translateX(585px);opacity:0}}@keyframes reveal{0%,70%{opacity:0;transform:translateY(6px)}79%,94%{opacity:1;transform:translateY(0)}100%{opacity:0}}@keyframes spark{0%,73%,100%{opacity:.2;transform:scale(.85)}80%,92%{opacity:1;transform:scale(1.1)}}
-@media (prefers-reduced-motion:reduce){.stage,.pulse,.project,.spark{animation:none}.project{opacity:1}.pulse{opacity:0}}
+  .label{font:500 17px system-ui,-apple-system,'Segoe UI',sans-serif;fill:#7294a8;text-anchor:middle}
+  .stage{opacity:0;animation:appear 9s infinite}
+  .s1{animation-delay:0s}.s2{animation-delay:.8s}.s3{animation-delay:1.6s}
+  .link{stroke:#6195aa;stroke-width:2;stroke-dasharray:5 8;opacity:0;animation:appear 9s infinite 1.6s}
+  .project{opacity:0;transform-origin:725px 77px;animation:project 9s infinite}
+  .pulse{fill:#46cbb3;opacity:0;animation:pulse 9s infinite}
+  @keyframes appear{0%,4%{opacity:0}12%,64%{opacity:1}75%,100%{opacity:0}}
+  @keyframes project{0%,37%{opacity:0;transform:scale(.72)}48%,83%{opacity:1;transform:scale(1)}95%,100%{opacity:0;transform:scale(.92)}}
+  @keyframes pulse{0%,48%{opacity:0}53%,68%{opacity:1}75%,100%{opacity:0}}
+  @media (prefers-reduced-motion:reduce){.stage,.link,.project{animation:none;opacity:1}.pulse{animation:none;opacity:0}}
 </style>
-<defs><filter id="halo" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
-<rect width="920" height="220" rx="18" class="bg"/><text x="32" y="32" class="heading">FROM DATA TO IMPACT</text>
-<path d="M172 105H250 M370 105H448 M568 105H646" class="line"/>
-<g class="stage s1"><rect x="35" y="57" width="137" height="100" rx="16" class="frame"/><path d="M84 106l20-24 20 24-20 24z" class="shape"/><circle cx="104" cy="106" r="5" fill="#57e0cc"/><text x="104" y="183" class="caption">Explorer</text></g>
-<g class="stage s2"><rect x="233" y="57" width="137" height="100" rx="16" class="frame"/><path d="M270 83h62v46h-62zM301 83v46M270 106h62" class="shape"/><text x="301" y="183" class="caption">Structurer</text></g>
-<g class="stage s3"><rect x="431" y="57" width="137" height="100" rx="16" class="frame"/><path d="M499 82l26 15v29l-26 15-26-15V97zM473 97l26 16 26-16M499 113v28" class="shape"/><text x="499" y="183" class="caption">Construire</text></g>
-<g class="stage s4"><rect x="629" y="57" width="137" height="100" rx="16" class="frame"/><path d="M672 89h51v37h-51zM672 98h51M679 93h2m5 0h2M684 114l8 7 16-16" class="shape"/><text x="697" y="183" class="caption">Concrétiser</text></g>
-<g class="project"><rect x="789" y="68" width="105" height="78" rx="12" fill="#214b58" stroke="#58d5bd" stroke-width="2"/><path d="M802 87h79M808 79h4m6 0h4" stroke="#75c9cf" stroke-width="2"/><rect x="803" y="96" width="29" height="36" rx="4" fill="#3c8991"/><path d="M840 103h41M840 113h35M840 123h27" stroke="#9bd6d4" stroke-width="3" stroke-linecap="round"/><text x="841" y="183" class="caption">Projet utile</text></g>
-<circle class="pulse" cx="184" cy="105" r="5"/><circle class="spark" cx="776" cy="105" r="4" fill="#57e0cc"/>
+<g fill="none" stroke="#6395aa" stroke-width="2.5" stroke-linejoin="round">
+ <g class="stage s1"><rect x="70" y="28" width="110" height="100" rx="22" stroke-opacity=".25"/><path d="M125 42 159 78 125 114 91 78Z"/><circle cx="125" cy="78" r="9" fill="#46cbb3" stroke="none"/><text class="label" x="125" y="157" stroke="none">Explorer</text></g>
+ <path class="link" d="M185 78H245"/>
+ <g class="stage s2"><rect x="250" y="28" width="110" height="100" rx="22" stroke-opacity=".25"/><path d="M274 53h62v50h-62zM305 53v50M274 78h62"/><text class="label" x="305" y="157" stroke="none">Structurer</text></g>
+ <path class="link" d="M365 78H425"/>
+ <g class="stage s3"><rect x="430" y="28" width="110" height="100" rx="22" stroke-opacity=".25"/><path d="m485 45 33 19v30l-33 19-33-19V64zM452 64l33 19 33-19M485 83v30"/><text class="label" x="485" y="157" stroke="none">Construire</text></g>
+ <path class="link" d="M545 78H645"/>
+ <g class="project"><rect x="653" y="21" width="145" height="112" rx="17" stroke="#46cbb3" stroke-width="3"/><path d="M653 48h145"/><circle cx="670" cy="35" r="4" fill="#46cbb3" stroke="none"/><circle cx="683" cy="35" r="4" fill="#6395aa" stroke="none"/><rect x="670" y="62" width="49" height="52" rx="6" stroke-opacity=".65"/><path d="M731 67h49M731 82h33M731 97h42" stroke-opacity=".7"/><path d="m683 88 10 10 16-21" stroke="#46cbb3" stroke-width="4" stroke-linecap="round"/><text class="label" x="725" y="157" stroke="none" fill="#46cbb3">Projet concret</text></g>
+</g>
+<circle class="pulse" cx="725" cy="78" r="54" fill-opacity=".08"/>
 </svg>
