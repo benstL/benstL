@@ -1,76 +1,98 @@
+ 
 <div align="center">
 
 # Benoist LÉGAL
 
-**Data Engineering · Architecture applicative · IA**
+**Data Engineering · Architecture des systèmes · IA appliquée**
 
-*Comprendre les systèmes. Fiabiliser les données. Construire des solutions utiles.*
+*Comprendre les systèmes. Structurer les données. Faire évoluer les solutions.*
 
 <img src="./data-to-project.gif"
      alt="De la donnée au projet concret"
      width="850" />
-     
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Échanger-28647B?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/benoistlegal)
 [![Email](https://img.shields.io/badge/Email-Contact-17324D?style=flat-square&logo=gmail&logoColor=white)](mailto:benoistlegal@gmail.com)
 [![YUMMY](https://img.shields.io/badge/GitHub-YUMMY-288579?style=flat-square&logo=github&logoColor=white)](https://github.com/benstL/yummy-data-platform)
 
 </div>
 
-## Ce que j'apporte
+## À propos
 
-Diplômé d'un **Master en Ingénierie de la Donnée (Mines Paris – PSL Executive Education)**, j'ai contribué à des projets **Data & IA à l'INA**, entre ingénierie, architecture et besoins métiers.
+J'évolue à l'intersection de **l'ingénierie des données, de l'architecture applicative et de l'industrialisation des systèmes**.
 
-J'aime **comprendre l'existant**, relier les enjeux techniques aux usages, puis accompagner la construction de solutions fiables : de la cartographie des flux à l'industrialisation des traitements.
+Mon approche consiste à comprendre les environnements techniques dans leur ensemble : analyser les architectures existantes, identifier les dépendances, cartographier les flux et accompagner l'évolution des solutions en tenant compte des contraintes techniques et des usages métiers.
 
-## Réalisations marquantes
+À travers mes expériences à **l'Institut national de l'audiovisuel (INA)**, j'ai contribué à différents projets Data & IA, de l'analyse des traitements à leur documentation, leur fiabilisation et leur mise en production.
 
-| Domaine | Contributions et résultats |
+Je m'intéresse autant à la **construction de nouvelles solutions** qu'à la compréhension, à la maintenance et à la modernisation de systèmes existants.
+
+## Expériences & contributions
+
+| Domaine | Contributions |
 | :--- | :--- |
-| **Architecture & industrialisation** | Architecture et documentation de **4 produits Data & IA** ; cartographie des flux, DAT/DDEX, accompagnement du passage de PoC vers la production. |
-| **Qualité & automatisation** | Tests de non-régression automatisés : **plus de 50 % de réduction du temps de recette** ; analyse de la cohérence et de la complétude des données. |
-| **IA & référentiels** | Qualification de milliers d'entités, rapprochement de personnalités et pipeline Python pour enrichir les données d'entraînement d'un modèle **BERT** avec des *hard negatives*. |
+| **Architecture applicative** | Analyse d'environnements techniques, cartographie des flux et des dépendances, conception et rédaction de DAT/DDEX sur 4 produits Data & IA. |
+| **Data Engineering** | Analyse de pipelines, transformations de données, alimentation de Datamarts, contrôles de cohérence et de complétude. |
+| **Qualité & industrialisation** | Automatisation des tests de non-régression, réduction de plus de 50 % du temps de recette et accompagnement du passage de PoC vers la production. |
+| **IA & NLP** | Qualification d'entités nommées, rapprochement de référentiels et enrichissement de données d'entraînement pour un modèle BERT à l'aide de *hard negatives*. |
+| **Évolution des systèmes** | Analyse des dépendances techniques, préparation de migrations d'infrastructure, documentation et procédures d'exploitation. |
 
-<details>
-<summary><b>Autres contributions à l'INA</b></summary>
+Ces contributions s'inscrivent dans des environnements associant équipes de développement, data engineering, data science, métiers et exploitation.
 
-- Préparation d'une migration d'infrastructure : dépendances, procédures et runbook.
-- Analyse de pipelines d'alimentation de Datamarts et suivi des anomalies.
-- Collaboration avec les équipes data, documentaires, qualité et exploitation.
+## Projet personnel — YUMMY
 
-</details>
+**[Explorer YUMMY →](https://github.com/benstL/yummy-data-platform)**
 
-## 🍽️ YUMMY 
+**YUMMY** est une plateforme expérimentale de recommandation de recettes, construite autour d'une architecture de traitement et de valorisation des données.
 
-**[Découvrir le dépôt YUMMY →](https://github.com/benstL/yummy-data-platform)** · **MVP fonctionnel, en évolution**
+Le projet explore l'ensemble d'une chaîne Data : collecte, ingestion, transformation, enrichissement, traitements ML/NLP et exposition des résultats via API et interface utilisateur.
 
-Une plateforme de **recommandation de recettes** fondée sur les données alimentaires, les avis utilisateurs et la saisonnalité. Un projet de bout en bout pour explorer l'ingestion, la transformation, les traitements ML/NLP et la restitution de recommandations explicables.
+**Architecture fonctionnelle**
 
 ```mermaid
 flowchart LR
-  A[Food.com / EUFIC / FAOSTAT] --> B[Bronze]
-  B --> C[Silver]
-  C --> D[Gold]
-  D --> E[ML / Scoring]
-  E --> F[FastAPI / Streamlit]
+    A[Food.com / EUFIC / FAOSTAT] --> B[Bronze]
+    B --> C[Silver]
+    C --> D[Gold]
+    D --> E[ML / Scoring]
+    E --> F[FastAPI / Streamlit]
 ```
 
-**Technologies :** Python · SQL · DuckDB · Parquet · Airflow · dbt · MinIO · Docker · FastAPI · Streamlit · NLP
+**Stack technique**
 
-**En évolution :** robustesse des pipelines, observabilité, amélioration du scoring et exploration de nouvelles fonctionnalités IA.
+`Python` · `SQL` · `DuckDB` · `Parquet` · `Airflow` · `dbt` · `MinIO` · `Docker` · `FastAPI` · `Streamlit` · `NLP`
 
-## Compétences
+**Axes d'évolution**
 
-**Data & architecture** — Python, SQL, ETL/ELT, Medallion, Datamarts, MongoDB, DuckDB, Parquet, FastAPI  
-**IA & NLP** — BERT, NER, TF-IDF, KMeans, VADER, clustering, scoring  
-**Industrialisation** — Airflow, Dagster, Docker, Git, Jenkins, GitHub Actions, CI/CD, tests, DAT/DDEX
+- Fiabilisation et orchestration des pipelines
+- Observabilité et suivi de la qualité des données
+- Amélioration des modèles de scoring
+- Expérimentation de nouvelles fonctionnalités IA
 
-<sub>Cloud : notions en cours d'approfondissement, sans expertise revendiquée.</sub>
+## Environnement technique
+
+**Data Engineering & stockage**
+
+`Python` · `SQL` · `ETL/ELT` · `MongoDB` · `DuckDB` · `Parquet` · `Datamarts` · `Medallion`
+
+**Architecture & API**
+
+`FastAPI` · `REST` · `Architecture applicative` · `Cartographie des flux` · `DAT/DDEX`
+
+**Orchestration & industrialisation**
+
+`Airflow` · `Dagster` · `Docker` · `Jenkins` · `GitHub Actions` · `CI/CD` · `Tests automatisés`
+
+**Machine Learning & NLP**
+
+`BERT` · `NER` · `TF-IDF` · `KMeans` · `VADER` · `Clustering` · `Scoring`
 
 ---
 
 <div align="center">
 
-**Un système à comprendre, des données à valoriser, un projet à faire évoluer ?**  
-[Échangeons sur LinkedIn](https://linkedin.com/in/benoistlegal) · [Explorer YUMMY](https://github.com/benstL/yummy-data-platform)
+**Ingénierie des données · Architecture · Évolution des systèmes**
+
+[LinkedIn](https://linkedin.com/in/benoistlegal) · [GitHub](https://github.com/benstL) · [YUMMY](https://github.com/benstL/yummy-data-platform)
 
 </div>
